@@ -4,11 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebDevGallary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/asset/style.css">
 </head>
 
 <body>
+        <!-- Navbar -->
+        <nav class="bg-red-500 p-2">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-3xl font-bold">WebDevGallery™</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#" class="bg-red-600 text-white py-2 px-4 rounded-full hover:bg-white hover:text-black border border-red-600">Home</a>
+                    <a href="#" class="bg-red-600 text-white py-2 px-4 rounded-full hover:bg-white hover:text-black border border-red-600">About</a>
+                    <a href="#" class="bg-red-600 text-white py-2 px-4 rounded-full hover:bg-white hover:text-black border border-red-600">Services</a>
+                    <a href="#" class="bg-red-600 text-white py-2 px-4 rounded-full hover:bg-white hover:text-black border border-red-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-300 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Home</a>
+                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">About</a>
+                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Services</a>
+                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Contact</a>
+            </div>
+        </nav>
 
     
     <div class="container">
@@ -31,7 +58,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg">&lt;<path
                                 d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z">
                             </path></svg>
-                        <a class="link" href="\nameTagSticker\index.html">Preview</a>
+                        <a class="link" href="projects\nameTagSticker\index.html">Preview</a>
                     </div>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg">
@@ -52,7 +79,7 @@
             <div class="card__img"></div>
             <div class="card__descr-wrapper">
                 <p class="card__title">
-                    Project
+                    KeyTracker
                 </p>
                 <p class="card__descr">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis nemo fugit autem
@@ -65,7 +92,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg">&lt;<path
                                 d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z">
                             </path></svg>
-                        <a class="link" href="#">Preview</a>
+                        <a class="link" href="projects\keyTracker\index.html">Preview</a>
                     </div>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg">
@@ -84,7 +111,7 @@
             <div class="card__img"></div>
             <div class="card__descr-wrapper">
                 <p class="card__title">
-                    Name Sticker
+                    Coin Flip
                 </p>
                 <p class="card__descr">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis nemo fugit autem
@@ -97,7 +124,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg">&lt;<path
                                 d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z">
                             </path></svg>
-                        <a class="link" href="\nameTagSticker\index.html">Preview</a>
+                        <a class="link" href="projects\coinFlip\index.html">Preview</a>
                     </div>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg">
@@ -116,7 +143,7 @@
             <div class="card__img"></div>
             <div class="card__descr-wrapper">
                 <p class="card__title">
-                    Name Sticker
+                    Poll System
                 </p>
                 <p class="card__descr">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis nemo fugit autem
@@ -129,7 +156,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg">&lt;<path
                                 d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z">
                             </path></svg>
-                        <a class="link" href="\nameTagSticker\index.html">Preview</a>
+                        <a class="link" href="projects\pollSystem\index.html">Preview</a>
                     </div>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg">
@@ -145,6 +172,37 @@
 
 
     </div>
+   
+
+    <footer class=" bg-red-500 mt-5 ">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-white sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline">WebDevGallery™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white  sm:mt-0">
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
