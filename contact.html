@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevGallary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/asset/style.css">
+</head>
+
+<body>
+        <!-- Navbar -->
+        <nav class="bg-red-500 p-2">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-3xl font-bold">WebDevGallery™</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="bg-red-600 text-white py-2 px-4 rounded-full hover:bg-white hover:text-black border border-red-600">Home</a>
+                    <a href="about.html" class="bg-red-600 text-white py-2 px-4 rounded-full hover:bg-white hover:text-black border border-red-600">About</a>
+                    <a href="#" class="bg-red-600 text-white py-2 px-4 rounded-full hover:bg-white hover:text-black border border-red-600">Projects</a>
+                    <a href="contact.html" class="bg-red-600 text-white py-2 px-4 rounded-full hover:bg-white hover:text-black border border-red-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-300 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Home</a>
+                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">About</a>
+                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Services</a>
+                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700">Contact</a>
+            </div>
+        </nav>
+
+        <div class="container mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact Us</h2>
+    
+            <form class="max-w-xl mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your Name">
+                </div>
+    
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your Email">
+                </div>
+    
+                <div class="mb-4">
+                    <label for="subject" class="block text-gray-700 font-semibold mb-2">Subject</label>
+                    <input type="text" id="subject" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Subject">
+                </div>
+    
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                    <textarea id="message" rows="5" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your Message"></textarea>
+                </div>
+    
+                <div class="text-center">
+                    <button type="submit" class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">Send Message</button>
+                </div>
+            </form>
+        </div>
+    
+   
+
+    <footer class=" bg-red-500 mt-5 ">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-white sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline">WebDevGallery™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white  sm:mt-0">
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
